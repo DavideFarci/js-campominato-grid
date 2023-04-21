@@ -13,8 +13,8 @@ main {
 .grid {
 	aspect-ratio: 1 / 1;
 	height: 70vh;
-	background-color: salmon;
-	border: 3px solid white;
+	/* background-color: salmon; */
+	/* border: 3px solid white; */
     gap: 0;
 }
 
@@ -23,7 +23,7 @@ main {
     font-weight: bold;
 	width: 10%;
 	height: 10%;
-	border: 1px solid white;
+	border: 1px solid black;
 	cursor: pointer;
     display: flex;
     justify-content: center;
@@ -31,7 +31,7 @@ main {
 }
 
 .clicked {
-	background-color: aqua;
+	background-color: brown;
 }
 
 footer {

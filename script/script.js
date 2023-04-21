@@ -20,9 +20,10 @@ Le validazioni e i controlli possiamo farli anche in un secondo momento.
 // selezionare gli elementi del DOM necessari
 
 //selezionare il bottone per creare la griglia 
-const eleButton = document.querySelector(".btn");
+const eleButton = document.querySelector("#btn");
 
 eleButton.addEventListener("click", function () {
+    
     const eleGrid = document.querySelector('.grid');
     // generare la griglia
     createGrid(100, eleGrid);
