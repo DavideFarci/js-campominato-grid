@@ -19,10 +19,19 @@ main {
 }
 
 .cell {
+    font-size: .8em;
+    font-weight: bold;
 	width: 10%;
 	height: 10%;
 	border: 1px solid white;
 	cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clicked {
+	background-color: aqua;
 }
 
 footer {

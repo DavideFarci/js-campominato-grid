@@ -16,3 +16,28 @@ Di cosa ho bisogno per generare i numeri?
 Proviamo sempre prima con dei console.log() per capire se stiamo ricevendo i dati giusti.
 Le validazioni e i controlli possiamo farli anche in un secondo momento.
 */
+
+// selezionare gli elementi del DOM necessari
+const eleGrid = document.querySelector('.grid');
+
+//selezionare il bottone per creare la griglia 
+const eleButton = document.querySelector(".btn");
+
+eleButton.addEventListener("click", function () {
+    // generare la griglia
+    createGrid(100, eleGrid);
+    
+    // applicare gli event listeners a tutte le celle della griglia
+    const listCells = document.querySelectorAll('.cell');
+    for (let i = 0; i < listCells.length; i++) {
+        const cell = listCells[i];
+        cell.addEventListener('click',
+            function colorCell() {
+                console.log(this);
+                this.classList.toggle('clicked');
+            }
+        );
+    }
+
+});
+
