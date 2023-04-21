@@ -18,12 +18,12 @@ Le validazioni e i controlli possiamo farli anche in un secondo momento.
 */
 
 // selezionare gli elementi del DOM necessari
-const eleGrid = document.querySelector('.grid');
 
 //selezionare il bottone per creare la griglia 
 const eleButton = document.querySelector(".btn");
 
 eleButton.addEventListener("click", function () {
+    const eleGrid = document.querySelector('.grid');
     // generare la griglia
     createGrid(100, eleGrid);
     
@@ -31,13 +31,11 @@ eleButton.addEventListener("click", function () {
     const listCells = document.querySelectorAll('.cell');
     for (let i = 0; i < listCells.length; i++) {
         const cell = listCells[i];
-        cell.addEventListener('click',
-            function colorCell() {
-                console.log(this);
-                this.classList.toggle('clicked');
-            }
-        );
+        cell.addEventListener('click', function() {
+            this.classList.toggle('clicked');
+        }
+        )
     }
-
+    
 });
 
