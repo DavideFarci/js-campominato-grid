@@ -1,13 +1,18 @@
-body {
-    background-color: lightblue;
-}
-
 main {
     height: 100vh;
+    background-color: black;
 }
 
 .navbar {
     height: 4rem;
+}
+
+.navbar img {
+    height: 3rem;
+}
+
+.navbar a {
+    vertical-align: -3px;
 }
 
 .container {
@@ -16,6 +21,7 @@ main {
 
 .grid {
     box-sizing: content-box;
+    background-color: grey;
 }
 
 .grid_easy {
@@ -23,7 +29,7 @@ main {
 }
 
 .grid_medium {
-    width: 570px;
+    width: 540px;
 }
 
 .grid_hard {
