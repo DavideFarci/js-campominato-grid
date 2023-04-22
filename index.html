@@ -18,16 +18,12 @@
             <div class="container-fluid">
                 <a class="navbar-brand">Campo Minato</a>
                 <div class="d-flex" role="search">
-                    <div class="dropdown">
-                        <button class="btn bg-body-tertiary text-dark btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Scegli la difficoltà
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a data-value="Easy" class="dropdown-item" href="#">Easy</a></li>
-                            <li><a data-value="Medium" class="dropdown-item" href="#">Medium</a></li>
-                            <li><a data-value="Hard" class="dropdown-item" href="#">Hard</a></li>
-                        </ul>
-                    </div>
+                    <select id="difficulty" class="form-select form-select-md">
+                        <option selected>Scegli la difficoltà</option>
+                        <option value="100">Easy</option>
+                        <option value="81">Medium</option>
+                        <option value="49">Hard</option>
+                    </select>
                     <button id="btn" class="btn btn-outline-success" type="submit">Play</button>
                 </div>
             </div>

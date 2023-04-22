@@ -6,23 +6,36 @@ main {
     height: 100vh;
 }
 
+.navbar {
+    height: 4rem;
+}
+
 .container {
-    height: calc(100% - 9rem);
+    height: calc(100% - 7rem);
 }
 
 .grid {
-	aspect-ratio: 1 / 1;
-	height: 70vh;
-	/* background-color: salmon; */
-	/* border: 3px solid white; */
-    gap: 0;
+    box-sizing: content-box;
 }
+
+.grid_easy {
+    width: 600px;
+}
+
+.grid_medium {
+    width: 570px;
+}
+
+.grid_hard {
+    width: 420px;
+}
+
 
 .cell {
     font-size: .8em;
     font-weight: bold;
-	width: 10%;
-	height: 10%;
+	width: 60px;
+	height: 60px;
 	border: 1px solid black;
 	cursor: pointer;
     display: flex;
@@ -36,5 +49,5 @@ main {
 
 footer {
     background-color: white;
-    height: 4rem;
+    height: 3rem;
 }

@@ -5,9 +5,3 @@ function createGrid(numCells, eleContainer) {
 		eleContainer.innerHTML += `<div class="cell">${i}</div>`;
 	}
 }
-
-// CAMBIARE COLORE
-// function colorCell() {
-// 	console.log(this);
-// 	this.classList.toggle('clicked');
-// }

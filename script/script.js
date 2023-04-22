@@ -22,14 +22,31 @@ Le validazioni e i controlli possiamo farli anche in un secondo momento.
 //selezionare il bottone per creare la griglia 
 const eleButton = document.querySelector("#btn");
 
+
 eleButton.addEventListener("click", function () {
-    
+    // debugger
     const eleGrid = document.querySelector('.grid');
-    // generare la griglia
-    createGrid(100, eleGrid);
+    const eleDifficulty = document.getElementById("difficulty");
+    let value = eleDifficulty.options[eleDifficulty.selectedIndex].value;
+    console.log(value);
     
-    // applicare gli event listeners a tutte le celle della griglia
+    // generare la griglia in base alla difficoltà scelta
+    if (value == "100") {
+        eleGrid.classList.remove("grid_easy", "grid_medium", "grid_hard");
+        eleGrid.classList.add("grid_easy");
+        createGrid(100, eleGrid);
+    } else if (value == "81") {
+        eleGrid.classList.remove("grid_easy", "grid_medium", "grid_hard");
+        eleGrid.classList.add( "grid_medium");
+        createGrid(81, eleGrid);
+    } else if (value == "49") {
+        eleGrid.classList.remove("grid_easy", "grid_medium", "grid_hard");
+        eleGrid.classList.add("grid_hard");
+        createGrid(49, eleGrid);
+    }
+
     const listCells = document.querySelectorAll('.cell');
+    // applicare gli event listeners a tutte le celle della griglia
     for (let i = 0; i < listCells.length; i++) {
         const cell = listCells[i];
         cell.addEventListener('click', function() {
@@ -37,6 +54,8 @@ eleButton.addEventListener("click", function () {
         }
         )
     }
+
+    
     
 });
 
