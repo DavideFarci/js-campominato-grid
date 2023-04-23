@@ -16,6 +16,17 @@ main {
     vertical-align: -3px;
 }
 
+select  {
+    background-color: lightgreen !important;
+    margin-right: .5rem;
+    border-color: #198754 !important;
+}
+
+select:hover {
+    cursor: pointer;
+    background-color: #198754 !important;
+}
+
 .container {
     height: calc(100% - 7rem);
 }
