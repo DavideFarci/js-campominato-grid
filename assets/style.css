@@ -5,6 +5,7 @@ main {
 
 .navbar {
     height: 4rem;
+    background-color: lightgreen;
 }
 
 .navbar img {
@@ -21,22 +22,22 @@ main {
 
 .grid {
     box-sizing: content-box;
-    background-color: grey;
+    background-color: rgb(71, 170, 71);
 }
 
 .grid_easy {
     width: 600px;
-    border: 1px solid white;
+    border: 3px solid green;
 }
 
 .grid_medium {
     width: 540px;
-    border: 1px solid white;
+    border: 3px solid green;
 }
 
 .grid_hard {
     width: 420px;
-    border: 1px solid white;
+    border: 3px solid green;
 }
 
 
@@ -57,6 +58,10 @@ main {
 }
 
 footer {
-    background-color: white;
+    background-color: green;
     height: 3rem;
+}
+
+footer a {
+    margin-left: .5rem;
 }
