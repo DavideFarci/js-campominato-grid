@@ -26,14 +26,17 @@ main {
 
 .grid_easy {
     width: 600px;
+    border: 1px solid white;
 }
 
 .grid_medium {
     width: 540px;
+    border: 1px solid white;
 }
 
 .grid_hard {
     width: 420px;
+    border: 1px solid white;
 }
 
 

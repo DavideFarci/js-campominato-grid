@@ -24,7 +24,6 @@ const eleButton = document.querySelector("#btn");
 
 
 eleButton.addEventListener("click", function () {
-    // debugger
     const eleGrid = document.querySelector('.grid');
     const eleDifficulty = document.getElementById("difficulty");
     let value = eleDifficulty.options[eleDifficulty.selectedIndex].value;
